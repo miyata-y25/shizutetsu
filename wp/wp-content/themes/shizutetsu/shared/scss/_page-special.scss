@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+.wrapper.special {
+	max-width: none !important;
+	padding: 0 !important;
+	.main-contents {
+		@include max-screen($screen-sm) {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+	}
+}
+/*===================================================================
+  241029 うちっちでんしゃ！
+===================================================================*/
+.page-contents-special2410 {
+	overflow: hidden;
+	.mainttl {
+		background-image: url(https://train.shizutetsu.co.jp/wp-content/uploads/2024/10/main-bg01.png), url(https://train.shizutetsu.co.jp/wp-content/uploads/2024/10/main-bg02.png);
+		background-position: left bottom, right bottom;
+		background-repeat: no-repeat;
+		background-size: 22.8vw;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		@include max-screen($screen-sm) {
+			background-position: left -9vw bottom, right -9vw bottom;
+		}
+		h1 {
+			padding: 0 18vw;
+			@include max-screen($screen-sm) {
+				padding: 0 8vw;
+			}
+			img {
+				max-width: none;
+				width: 100%;
+			}
+		}
+		.anchor {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 14px clamp(12px, 1.4vw , 23vw);
+			margin: 2.6vw auto;
+			padding: 0 18vw;
+			@include max-screen($screen-sm) {
+				flex-wrap: wrap;
+				padding: 0 10vw;
+			}
+			li {
+				width: 100%;
+				@include max-screen($screen-sm) {
+					width: calc(50% - 2.8vw);
+				}
+			}
+			a {
+				display: block;
+				background: url(https://train.shizutetsu.co.jp/wp-content/uploads/2024/10/arrow.svg) no-repeat right 1em center #eaeaea;
+				padding: 1em 1.6em 1em 1em;
+				font-size: clamp(12px, 1.4vw , 18px);
+				font-weight: bold;
+				line-height: 1;
+				border-radius: 999px;
+			}
+		}
+		figure {
+			width: 100%;
+			padding: 0 23vw;
+			@include max-screen($screen-sm) {
+				padding: 0 15vw;
+			}
+			img {
+				max-width: none;
+				width: 100%;
+			}
+		}
+	}
+	h2 {
+		text-align: center;
+		@include max-screen($screen-sm) {
+			max-width: 240px;
+			margin: 0 auto;
+		}
+	}
+	.concept {
+		background: #f2f7f7;
+		border-radius: 50% 50% 0 0 / 500px 500px 0 0;
+		margin: -3em -200px 0 -200px;
+		padding: 8em 220px 18%;
+		position: relative;
+		text-align: center;
+		@include max-screen($screen-sm) {
+			border-radius: 50% 50% 0 0 / 300px 300px 0 0;
+		}
+		.inner {
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		h2 {
+			max-width: none !important;
+		}
+		p {
+			margin-top: 3em;
+			font-weight: bold;
+			small {
+				font-size: 70%;
+				font-weight: normal;
+			}
+		}
+		figure {
+			margin-top: 3em;
+		}
+	}
+	.app {
+		background: #fff;
+		border-radius: 50% 50% 0 0 / 500px 500px 0 0;
+		margin: -14% -200px 0 -200px;
+		padding: 5em 220px 18%;
+		position: relative;
+		@include max-screen($screen-sm) {
+			border-radius: 50% 50% 0 0 / 300px 300px 0 0;
+		}
+		.inner {
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		table {
+			margin-top: 3em;
+			th,td {
+				padding: 1em;
+				border: 1px solid #ccc;
+				small {
+					font-size: 80%;
+				}
+				a {
+					color: #00a0e8;
+					text-decoration: underline;
+				}
+			}
+			th {
+				background: #f3f3f3;
+				white-space: nowrap;
+				text-align: center;
+			}
+		}
+	}
+	.form {
+		background: #00a0e8;
+		border-radius: 50% 50% 0 0 / 500px 500px 0 0;
+		margin: -14% -200px 0 -200px;
+		padding: 5em 220px;
+		position: relative;
+		@include max-screen($screen-sm) {
+			border-radius: 50% 50% 0 0 / 300px 300px 0 0;
+		}
+		.inner {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+		p {
+			margin: 3em 0 1em;
+			text-align: center;
+			color: #fff;
+			a {
+				text-decoration: underline;
+				color: inherit;
+			}
+		}
+	}
+	.caution {
+		padding: 5em 20px;
+		.inner {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+		ul {
+			margin: 3em 0;
+			padding-left: .75em;
+		}
+		li {
+			list-style-type: disc;
+			margin-bottom: 1em;
+		}
+		.contact {
+			padding: 1.5em 0;
+			border-top: 1px solid #333;
+			&:last-child {
+				border-bottom: 1px solid #333;
+			}
+		}
+	}
+}

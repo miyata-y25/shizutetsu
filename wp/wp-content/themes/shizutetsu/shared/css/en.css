@@ -1,0 +1,186 @@
+/*!
+ *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.5.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*===================================================================
+  English Pages
+===================================================================*/
+body.en .site-header .site-header__nav ul.list {
+  background: #F2F2F2;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+body.en .site-header .site-header__nav ul.list li:last-child {
+  border-right: 0px;
+}
+body.en .top-contents-route-tit {
+  margin-bottom: 2em !important;
+}
+body.en .top-contents-route-list-en {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+body.en .top-contents-route-list-en ul:not([class]) {
+  position: relative;
+}
+body.en .top-contents-route-list-en ul:not([class])::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: #4D4948;
+  position: absolute;
+  top: 0;
+  left: 2.25em;
+  z-index: 0;
+}
+body.en .top-contents-route-list-en ul:not([class]) li {
+  border: #D8D8D8 1px solid;
+  background-color: #fff;
+  margin-bottom: 1em;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body.en .top-contents-route-list-en ul:not([class]) li .cnt {
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5em 1em;
+}
+@media screen and (max-width: 820px) {
+  body.en .top-contents-route-list-en ul:not([class]) li .cnt {
+    width: 100%;
+    padding: 1em 1em;
+  }
+}
+body.en .top-contents-route-list-en ul:not([class]) li .cnt .sn {
+  width: 8%;
+}
+@media screen and (max-width: 820px) {
+  body.en .top-contents-route-list-en ul:not([class]) li .cnt .sn {
+    width: 16%;
+  }
+}
+body.en .top-contents-route-list-en ul:not([class]) li .cnt .sn span {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 16px;
+  border: #0094E2 4px solid;
+  border-radius: 100px;
+  padding: 0.4em 0.35em;
+}
+body.en .top-contents-route-list-en ul:not([class]) li .cnt .tit {
+  font-size: 2.4rem;
+  padding: 0 0.5em;
+}
+@media screen and (max-width: 820px) {
+  body.en .top-contents-route-list-en ul:not([class]) li .cnt .tit {
+    width: 84%;
+    font-size: 2rem;
+  }
+}
+body.en .top-contents-route-list-en ul:not([class]) li .menu {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 820px) {
+  body.en .top-contents-route-list-en ul:not([class]) li .menu {
+    width: 100%;
+    line-height: 1.3;
+  }
+}
+body.en .top-contents-route-list-en ul:not([class]) li .menu li {
+  width: 33.3333%;
+  border: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+body.en .top-contents-route-list-en ul:not([class]) li .menu li a {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  padding: 1.25em 1em 1.25em 3em;
+  width: 100%;
+  text-align: center;
+  background-position: center left 1.25em;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 820px) {
+  body.en .top-contents-route-list-en ul:not([class]) li .menu li a {
+    padding: 0.5em 0.25em 0.5em 1.5em;
+    background-position: center left 0.5em;
+    background-size: 12px auto;
+    text-align: left;
+  }
+}
+body.en .top-contents-route-list-en ul:not([class]) li .menu li.m-transfer a {
+  background-color: #0094E2;
+  background-image: url(../../images/timetable/timetable-ico01.svg);
+}
+body.en .top-contents-route-list-en ul:not([class]) li .menu li.m-station a {
+  background-color: #00A89C;
+  background-image: url(../../images/timetable/timetable-ico02.svg);
+}
+body.en .top-contents-route-list-en ul:not([class]) li .menu li.m-timetable a {
+  background-color: #22B473;
+  background-image: url(../../images/timetable/timetable-ico03.svg);
+}
+body.en .top-contents-route-list-en ul:not([class]) li .menu li .name {
+  font-size: 1.4rem;
+  display: block;
+}
+body.en .top-contents-route-list-en ul:not([class]) li .menu li .en {
+  font-size: 1rem;
+  display: block;
+}
+@media screen and (max-width: 820px) {
+  body.en .top-contents-route-list-en ul:not([class]) li .menu.menu-2 li {
+    width: 50%;
+  }
+}
+body.en .page-contents-timetable-station-list ul li .cnt {
+  justify-content: flex-start !important;
+}
+body.en .page-contents-timetable-station-list ul li .cnt .tit {
+  width: auto !important;
+}
+body.en .page-contents-timetable-station-list ul li .menu li a {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding-left: 3em !important;
+}
+body.en .page-contents-timetable-day-info .ud,
+body.en .page-contents-timetable-menu .ud {
+  padding: 0 !important;
+}
+body.en .page-contents-timetable-day-info .ud span,
+body.en .page-contents-timetable-menu .ud span {
+  font-size: 13px;
+  border-radius: 0px !important;
+  padding: 0.5em !important;
+  width: 7em;
+  display: block;
+  text-align: center;
+}
+body.en .page-contents-timetable-singlemap .list {
+  font-size: 1.4rem !important;
+}
+body.en .page-contents-timetable-singlemap p.caution {
+  font-size: 1.2rem;
+  margin-top: 1em;
+}
+/*# sourceMappingURL=en.css.map */

@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+//------------------------------------------------------------
+//	【必須】サイト設定 - 変数
+//------------------------------------------------------------
+
+//■フォント
+
+	$default-font	: "Times New Roman", Serif;
+
+
+//■アニメーション
+
+	$default-transition: true;
+	$default-transition-duration: .2s;
+
+
+//■マウスオーバー時のリンク画像の透過
+
+	$default-img-hover: false;
+	$default-img-hover-opacity: 0.8;
+
+
+
+//------------------------------------------------------------
+//	【カスタム】変数
+//------------------------------------------------------------
+
+//■色
+  $color-green: #599442;
+  $color-gray: #000000;
+
+//■サイト幅
+	$site-width : 1366px;
+  $sub-width : 1060px;
+  $max-width : 1500px;
+
+//■余白
+  $margin-site: 10px;
+
+//■ブレイクポイント
+  //$screen-xl : 1440px;
+  $screen-lg : 1280px;
+  $screen-md : 840px;
+  $screen-sm : 820px;
+  //$screen-sm : 640px;
+  $screen-xs : 480px;

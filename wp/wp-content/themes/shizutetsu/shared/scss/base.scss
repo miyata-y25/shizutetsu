@@ -1,0 +1,1019 @@
+@charset "utf-8";
+@import "variable";
+@import "basic/mixin";
+@import "basic/selector";
+@import "basic/reset";
+@import "basic/default";
+@import "components/font-awesome/font-awesome_modify";
+
+/*===================================================================
+  start up reset
+===================================================================*/
+body {
+  background: transparent;
+  color: inherit;
+  font-weight: normal;
+  line-height: normal;
+	font-feature-settings: 'palt';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+a:visited {
+  color: #4D4948;
+}
+
+a:hover {
+  color: #4D4948;
+}
+
+/*===================================================================
+	サイト基礎
+===================================================================*/
+//webFont
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap');
+//font-family: 'Zen Maru Gothic', sans-serif;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  position: relative;
+  font-size: 16px;
+  color: #4D4948;
+}
+
+a {
+  color: #4D4948;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  img {
+    transition: opacity 0.15s ease-out;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*===================================================================
+	ヘッダー
+===================================================================*/
+.site-header {
+
+  @include max-screen($screen-sm) {
+    //position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 9999;
+    //top: 0;
+  }
+
+  .site-header__wrapper {
+    width: 100%;
+  }
+
+  .site-header__box1 {
+
+    @include max-screen($screen-sm) {
+      padding: 0;
+      height: 46px;
+    }
+
+    .site-header__box__cnt {
+      @include flex-sb;
+      padding: 1.5em 2vw;
+
+      @include max-screen($screen-sm) {
+        padding: .5em;
+      }
+
+      .logo {
+        h1 {
+          @include max-screen($screen-sm) {
+            max-width: 130px;
+          }
+        }
+      }
+
+      .menu {
+        @include flex-fe;
+				align-items: center;
+				gap: 1em;
+
+        .link {
+          @include flex-sb;
+          height: 100%;
+
+          ul {
+            @include flex-fe;
+            align-items: center;
+						gap: 2em;
+
+            @include max-screen($screen-sm) {
+              padding: 0 3.0em 0 0;
+							gap: 1em;
+            }
+
+            li {
+
+              a {
+                background-repeat: no-repeat;
+                background-position: center left;
+                background-size: contain;
+
+                &.ico01 {
+                  background-image: url(../../images/ico-contact.svg);
+                  padding: 0 0 0 1.6em;
+                }
+
+                &.ico02 {
+                  background-image: url(../../images/ico-lang.svg);
+                  padding: 0 0 0 1.6em;
+                }
+
+                span {
+                  @include max-screen($screen-sm) {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .sns {
+          @include max-screen($screen-sm) {
+            display: none;
+          }
+
+          ul {
+            @include flex-sb;
+            align-items: center;
+
+            li {
+              margin: 0 0 0 1em;
+
+              &.multi {
+                position: relative;
+              }
+            }
+          }
+
+          .x-btn {
+            display: block;
+            position: relative;
+            z-index: 2;
+          }
+
+          .x-list {
+            @include flex-fs;
+            flex-direction: column;
+            display: none;
+            gap: .6em;
+            background: #000;
+            padding: .5em;
+            border-radius: 4px;
+            position: absolute;
+            right: 50%;
+            top: 4.5rem;
+            width: 14em;
+            transform: translateX(50%);
+            z-index: 1;
+            &::before {
+              content: "";
+              width: 4rem;
+              height: 4.5rem;
+              position: absolute;
+              top: -4.5rem;
+              left: 50%;
+              background: #000;
+              transform: translateX(-50%);
+              border-top-right-radius: 100px;
+              border-top-left-radius: 100px;
+            }
+            &.active {
+              display: flex;
+              animation: fadeIn .3s ease-in-out forwards;
+            }
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: .6em;
+              width: 100%;
+              padding: 1em .6em;
+              background: #fff;
+              font-weight: bold;
+              font-size: 1.4rem;
+              color: #000;
+              &::before {
+                content: "";
+                width: 1.6rem;
+                height: 1.6rem;
+                background: url('../../images/ico-x.svg') no-repeat left center / contain;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .site-header__box2 {
+    background-color: #F2F2F2;
+    padding: 0 4vw;
+
+    @include max-screen($screen-sm) {
+      padding: 0
+    }
+
+    .site-header__box__cnt {
+      @include flex-fs;
+      font-weight: bold;
+      position: relative;
+			width: 100%;
+			max-width: 1280px;
+			margin: 0 auto;
+
+      dl {
+        @include flex-fs;
+				align-items: center;
+        padding: 1.25em 2em 1.25em 0;
+        font-size: 1.5rem;
+
+        @include max-screen($screen-sm) {
+          padding: .65em 4vw;
+          width: 88%;
+        }
+
+        dt {
+          padding: 0 3em 0 0;
+
+          @include max-screen($screen-sm) {
+            padding: 0;
+            width: 22%;
+            font-size: 1.2rem;
+          }
+        }
+
+        dd {
+          font-weight: normal;
+          background-repeat: no-repeat;
+          background-position: center left;
+          background-size: contain;
+          background-image: url(../../images/ico-info01.svg);
+          padding: 0 0 0 2.0em;
+					color: #0094E2;
+					
+					&.caution {
+						color: #EE0030;
+						font-weight: bold;
+						background-image: url(../../images/ico-info02.svg);
+					}
+
+          @include max-screen($screen-sm) {
+            width: 78%;
+            font-size: 1.2rem;
+            background-size: auto 1.15em;
+            background-position: top .2em left 0;
+            padding: 0 1.5em 0 1.5em;
+          }
+        }
+      }
+
+      .sp-aco {
+        display: none;
+
+        @include max-screen($screen-sm) {
+          display: block;
+          background-color: #0094E2;
+          width: 12%;
+          text-align: center;
+          display: flex;
+          padding: 1.0em .5em;
+          align-items: center;
+
+          img {
+						width: 0.8em;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      ul {
+        @include flex-fe;
+				margin-left: auto;
+
+        @include max-screen($screen-sm) {
+          width: 100%;
+          display: none;
+        }
+
+        li {
+					width: 100%;
+
+          a {
+            display: flex;
+            color: #ffffff;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 1em 2em;
+            font-size: 1.3rem;
+          }
+
+          &:last-child {
+            a {
+              background-color: #0094E2;
+            }
+          }
+          &:first-child {
+            a {
+              background-color: #EE0030;
+            }
+          }
+        }
+
+        &.active {
+          @include max-screen($screen-sm) {
+            @include flex-sb;
+						flex-wrap: nowrap;
+          }
+        }
+      }
+    }
+  }
+
+  .site-header__box3 {}
+
+  //トグルメニュー
+  .site-header__toggle {
+    display: none;
+  }
+
+  @include max-screen($screen-sm) {
+
+    .site-header__toggle,
+    .site-header__toggle span {
+      display: block;
+      transition: all 0.4s;
+      box-sizing: border-box;
+    }
+
+    .site-header__toggle {
+      //トグル本体
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 36px;
+      height: 34px;
+      $padding: 24px;
+      $padding-sm: 14px;
+      padding: $padding;
+      box-sizing: content-box;
+      z-index: 9999;
+
+      @include max-screen($screen-sm) {
+        width: 20px;
+        height: 18px;
+        padding: $padding-sm;
+      }
+
+      span {
+        //3本線
+        position: absolute;
+        left: 0 + $padding;
+        width: calc(100% - (#{$padding} * 2));
+        height: 6px;
+        background-color: #4D4948;
+
+        @include max-screen($screen-sm) {
+          left: 0 + $padding-sm;
+          width: calc(100% - (#{$padding-sm} * 2));
+          height: 2px;
+        }
+
+        &:nth-of-type(1) {
+          //1本目
+          top: 2 + $padding;
+          animation: menu-bar01 0.75s forwards;
+
+          @include max-screen($screen-sm) {
+            top: 2 + $padding-sm;
+          }
+        }
+
+        &:nth-of-type(2) {
+          //2本目
+          top: 14px + $padding;
+          transition: all 0.25s 0.25s;
+          opacity: 1;
+
+          @include max-screen($screen-sm) {
+            top: 8 + $padding-sm;
+          }
+        }
+
+        &:nth-of-type(3) {
+          //3本目
+          bottom: 2 + $padding;
+          animation: menu-bar02 0.75s forwards;
+
+          @include max-screen($screen-sm) {
+            bottom: 2 + $padding-sm;
+          }
+        }
+      }
+
+      &.is-active {
+        //メニューOPEN時の色
+        background-color: #000;
+				opacity: 1;
+				z-index: 10001;
+
+        span {
+          //メニューOPEN時の3本線
+          background-color: #fff;
+
+          &:nth-of-type(1) {
+            //1本目
+            top: 30px;
+            animation: active-menu-bar01 0.75s forwards;
+
+            @include max-screen($screen-sm) {
+              top: 14px;
+            }
+          }
+
+          &:nth-of-type(2) {
+            //2本目
+            opacity: 0;
+          }
+
+          &:nth-of-type(3) {
+            //3本目
+            bottom: 30px;
+            animation: active-menu-bar03 0.75s forwards;
+
+            @include max-screen($screen-sm) {
+              bottom: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .site-header__nav {
+    .list {
+      @include flex-sb;
+      align-items: center;
+      padding: 1.5em 0;
+
+      @include max-screen($screen-sm) {
+        padding: 0;
+      }
+
+      li {
+        align-self: stretch;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        //height: 100%;
+        width: 16%;
+        border-right: #D6D6D6 1px solid;
+
+        @include max-screen($screen-sm) {
+          width: 100% !important;
+          height: auto;
+          border-bottom: #D6D6D6 1px solid;
+          text-align: center;
+					&:first-child {
+						border-top: #D6D6D6 1px solid;
+					}
+        }
+
+        a {
+          display: block;
+          //padding: 0 .5em 30px;
+          padding: .5em .5em;
+
+          @include max-screen($screen-sm) {
+            padding: 1.0em .5em;
+						color: #fff;
+          }
+        }
+      }
+    }
+
+    //ハンバーガーメニュー常時表示コメントアウト
+    @include max-screen($screen-sm) {
+      background-color: rgba(0, 148, 226, .9);
+      @include pos-a(left, 0, top, -4px);
+      width: 100%;
+			height: 100vh;
+      transform: translateY(-100%);
+      transition: 0.4s;
+      //z-index: -1;
+
+      &.is-active {
+				position: fixed;
+				top: 0;
+				right: 0;
+        transform: translateY(0);
+        z-index: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				z-index: 10000;
+      }
+
+    }
+  }
+}
+
+//メインイメージ
+.top-mainVisual {
+  width: 100%;
+  margin: 0 auto;
+
+  a img:hover {
+    opacity: 1;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+
+    button {
+      text-indent: -9999px;
+      padding: 0;
+      margin: 0;
+      width: 2em;
+      height: 3px;
+      background: #f0f0f0;
+      border: 0px !important;
+    }
+    .slick-active button {
+      background: #0094E2;
+    }
+  }
+}
+
+.sub-mainVisual {
+  width: 100%;
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  @include max-screen($screen-sm) {}
+
+  .sub-mainVisual-cnt {
+    h1 {
+      font-size: 3.6rem;
+      margin: 0 0 1em;
+      padding: 0 0 .15em;
+      border-bottom: 4px solid #F74A68;
+      border-image: linear-gradient(125deg, #F74A68 0%, #FCBDD7 15%, #FFD44D 33%, #A2C862 50%, #3CC871 66%, #57C2EA 83%, #4F8FDA 100%);
+      border-image-slice: 1;
+      @include flex-sb;
+    }
+
+    ol {
+      font-size: 1.2rem;
+      padding: 2em 0 2.5em;
+
+      li {
+        display: inline-block;
+
+        &::after {
+          content: ">";
+          margin: 0 1em;
+        }
+
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+//不要
+.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+
+  @include max-screen($screen-sm) {}
+}
+
+/*--------------------------------
+  keyframes
+--------------------------------*/
+@keyframes menu-bar01 {
+  0% {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  50% {
+    transform: translateY(8px) rotate(0);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes menu-bar02 {
+  0% {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(0);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes active-menu-bar01 {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(8px) rotate(0);
+  }
+
+  100% {
+    transform: translateY(8px) rotate(45deg);
+  }
+}
+
+@keyframes active-menu-bar03 {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(0);
+  }
+
+  100% {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/*===================================================================
+	メイン
+===================================================================*/
+.wrapper {
+  width: 100%;
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  @include max-screen($screen-sm) {
+    max-width: 1000px;
+    padding: 0;
+  }
+}
+
+.main-contents {
+  width: 100%;
+  text-align: left;
+}
+
+/*===================================================================
+	フッター
+===================================================================*/
+
+//scroll button
+.scroll-top {
+  #scroll-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: transparent;
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(../../images/ico-pagetop.svg);
+    border: 0;
+
+    @include max-screen($screen-sm) {
+      width: 40px;
+      height: 40px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+// fixed social
+.fixed-social {
+	display: none;
+	@include max-screen($screen-sm) {
+		display: block;
+		position: fixed;
+		right: 10px;
+		bottom: 10px;
+		z-index: 9999;
+
+		li {
+			margin-top: .5em;
+      &.multi {
+        position: relative;
+      }
+		}
+
+    .x-btn {
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+
+    .x-list {
+      @include flex-fs;
+      flex-direction: column;
+      display: none;
+      gap: .6em;
+      background: #000;
+      padding: .5em;
+      border-radius: 4px;
+      position: absolute;
+      right: 4.5rem;
+      top: 50%;
+      width: 14em;
+      transform: translateY(-50%);
+      z-index: 1;
+      &::before {
+        content: "";
+        width: 4.5rem;
+        height: 4rem;
+        position: absolute;
+        top: 50%;
+        right: -4.5rem;
+        background: #000;
+        transform: translateY(-50%);
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+      }
+      &.active {
+        display: flex;
+        animation: fadeIn .3s ease-in-out forwards;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .6em;
+        width: 100%;
+        padding: 1em .6em;
+        background: #fff;
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: #000;
+        &::before {
+          content: "";
+          width: 1.6rem;
+          height: 1.6rem;
+          background: url('../../images/ico-x.svg') no-repeat left center / contain;
+        }
+      }
+    }
+	}
+}
+
+//footer
+.site-footer {
+  clear: both;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../../images/foot-bg01.png);
+  margin: 5em 0 0;
+
+  @include max-screen($screen-sm) {}
+
+  .site-footer__btm {
+
+    .site-footer__btm__body {
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 4em 0 1em;
+      color: #ffffff;
+
+      a {
+        color: #fff;
+      }
+
+      .tit {
+        font-weight: bold;
+        padding: 0 0 3em;
+      }
+
+      .fnav01 {
+        padding: 0 0 1.5em;
+
+        @include max-screen($screen-sm) {
+          display: none;
+        }
+
+        ul {
+          @include flex-cen;
+
+          li {
+            width: 31.0%;
+            font-weight: bold;
+            font-size: 1.9rem;
+
+            a {
+              background-repeat: no-repeat;
+              background-position: center left;
+              background-size: contain;
+
+              &.ico01 {
+                background-image: url(../../images/foot-ico01.svg);
+                padding: .25em 0 .25em 2.2em;
+              }
+
+              &.ico02 {
+                background-image: url(../../images/foot-ico02.svg);
+                padding: .25em 0 .25em 2.5em;
+              }
+
+              &.ico03 {
+                background-image: url(../../images/foot-ico03.svg);
+                padding: .25em 0 .25em 1.85em;
+              }
+            }
+          }
+        }
+      }
+
+      .fnav02 {
+        padding: 0 0 1.5em;
+
+        ul {
+          li {
+            display: inline-block;
+            margin: 0 1.5em 0 0;
+            padding: 0 1.5em 0 0;
+            font-weight: bold;
+            font-size: 1.5rem;
+          }
+        }
+				
+        @include max-screen($screen-sm) {
+					padding: 0;
+					
+					ul {
+						li {
+							display: block;
+							width: 100%;
+							margin: 0;
+							padding: 0;
+							border-top: 1px solid #fff;
+							font-size: 1.4rem;
+							
+							a {
+								display: block;
+								padding: 1em;
+								width: 100%;
+							}
+						}
+					}
+        }
+
+      }
+
+      .fnav03 {
+        padding: 0 0 5.5em;
+
+        ul {
+					@include flex-cen;
+					
+          li {
+						padding: .3em 2em;
+						margin-bottom: 1em;
+						border-right: 1px solid rgba(255, 255, 255, .7);
+            font-weight: bold;
+            font-size: 1.3rem;
+						line-height: 1;
+
+            &:first-child {
+							border-left: 1px solid rgba(255, 255, 255, .7);
+            }
+            &:nth-child(6) {
+							border-left: 1px solid rgba(255, 255, 255, .7);
+            }
+          }
+        }
+				
+        @include max-screen($screen-sm) {
+					ul {
+						border-bottom: 1px solid #fff;
+						li {
+							display: flex;
+							justify-content: center;
+							width: 50%;
+							margin: 0;
+							padding: 0;
+							border-top: 1px solid #fff;
+							border-left: 0px !important;
+							font-size: 1.2rem;
+							
+							&:nth-child(2n) {
+								border-right: 0px;
+							}
+							
+							a {
+								display: block;
+								padding: 1em;
+								width: 100%;
+							}
+						}
+					}
+        }
+      }
+
+      .copy {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+}
+
+/*===================================================================
+  Blog Style
+===================================================================*/
+p img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.alignright {
+  margin: 1em;
+  margin: 0 0 1em 1em;
+  display: inline;
+}
+
+img.alignleft {
+  padding: 1em;
+  margin: 0 1em 1em 0;
+  display: inline;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+.aligncenter {
+  text-align: center;
+}

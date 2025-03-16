@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+//===========================================================
+//	リンク下線
+//===========================================================
+
+@mixin underline($underline,$hover) {
+	text-decoration: if($underline,underline,none);
+	
+	&:hover {
+		@if $hover {
+			text-decoration: if($underline,none,underline);
+		}
+	}
+}
+
+
+//===========================================================
+//	文字サイズ
+//===========================================================
+
+@mixin font-size($fontsize) {
+	//font-size: $fontsize + px;
+	font-size: ($fontsize / 10) + rem;
+}
+
+
+//===========================================================
+//	アニメーション
+//===========================================================
+@mixin transition($duration:$default-transition-duration) {
+	-webkit-transition : $duration;
+	transition : $duration;
+}
+
+
+//===========================================================
+//	キーフレーム
+//===========================================================
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes  #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($animation-name) {
+  -webkit-animation: $animation-name;
+  animation: $animation-name;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+//===========================================================
+//	余白付きwidth	
+//===========================================================
+
+@mixin margin-width($width,$margin) {
+	max-width: $width;
+	margin-right: auto;
+	margin-left: auto;
+	
+	@include max-screen($width + ($margin * 2)) {
+		margin-right: $margin;
+		margin-left: $margin;
+	}
+}
+
+
+//===========================================================
+//	グリッド	
+//===========================================================
+
+@mixin grid($grids-width,$grid-width,$columns) {
+	$grid-margin-number : $columns - 1;
+	$grid-margin: ($grids-width - ($grid-width * $columns)) / $grid-margin-number;
+	
+	float: left;
+	width: percentage($grid-width/$grids-width);
+	margin-top: percentage($grid-margin/$grids-width);
+	margin-left: percentage($grid-margin/$grids-width);
+	
+	&:nth-child(#{$columns}n+1) {
+		margin-left: 0;
+		clear: both;
+	}
+	&:nth-child(-n+#{$columns}) {
+		margin-top: 0;
+	}
+}
+
+
+
+
+//===========================================================
+//	position
+//===========================================================
+
+@mixin pos-r($from1:null, $pos1:null, $from2:null, $pos2:null, $from3:null, $pos3:null, $from4:null, $pos4:null){
+	position: relative;
+	
+	#{$from1}: $pos1;
+	#{$from2}: $pos2;
+	#{$from3}: $pos3;
+	#{$from4}: $pos4;
+}
+
+@mixin pos-a($from1:null, $pos1:null, $from2:null, $pos2:null, $from3:null, $pos3:null, $from4:null, $pos4:null){
+	position: absolute;
+	
+	#{$from1}: $pos1;
+	#{$from2}: $pos2;
+	#{$from3}: $pos3;
+	#{$from4}: $pos4;
+}
+
+@mixin pos-f($from1:null, $pos1:null, $from2:null, $pos2:null, $from3:null, $pos3:null, $from4:null, $pos4:null){
+	position: fixed;
+	
+	#{$from1}: $pos1;
+	#{$from2}: $pos2;
+	#{$from3}: $pos3;
+	#{$from4}: $pos4;
+}
+
+
+//===========================================================
+//	メディアクエリ
+//===========================================================
+@mixin max-screen($width) {
+ @media screen and (max-width: $width) { 
+    @content;
+  }
+}
+
+@mixin min-screen($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin screen($min-width,$max-width) {
+  @media screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+
+//===========================================================
+//	ベンダープレフィックス
+//===========================================================
+@mixin prefix($property, $value) {
+	@each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+		#{$prefix}#{$property}: $value;
+	}
+}
+
+
+//===========================================================
+//	clearfix	
+//===========================================================
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+//===========================================================
+//  flex    
+//===========================================================
+@mixin flex-sb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin flex-fs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+
+@mixin flex-fe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+}
+
+@mixin flex-cen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
