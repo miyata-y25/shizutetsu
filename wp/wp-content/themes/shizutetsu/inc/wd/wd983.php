@@ -6,31 +6,31 @@
 		<td>S01</td>
 		<td>新静岡</td>
 		<td>Shin-Shizuoka</td>
-		<td>9:44</td>
+		<td>9:35</td>
 	</tr>
 	<tr>
 		<td>S02</td>
 		<td>日吉町</td>
 		<td>Hiyoshicho</td>
-		<td>9:45</td>
+		<td>9:36</td>
 	</tr>
 	<tr>
 		<td>S03</td>
 		<td>音羽町</td>
 		<td>Otowacho</td>
-		<td>9:46</td>
+		<td>9:37</td>
 	</tr>
 	<tr>
 		<td>S04</td>
 		<td>春日町</td>
 		<td>Kasugacho</td>
-		<td>9:48</td>
+		<td>9:39</td>
 	</tr>
 	<tr>
 		<td>S05</td>
 		<td>柚木</td>
 		<td>Yunoki</td>
-		<td>9:49</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>S06</td>

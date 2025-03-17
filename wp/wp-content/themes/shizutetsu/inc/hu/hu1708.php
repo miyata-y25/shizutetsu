@@ -86,6 +86,12 @@
 		<td>Irieoka</td>
 		<td>17:29</td>
 	</tr>
+	<tr>
+		<td>S15</td>
+		<td>新清水</td>
+		<td>Shin-Shimizu</td>
+		<td>17:28</td>
+	</tr>
 </table>
 </div>
 </div>

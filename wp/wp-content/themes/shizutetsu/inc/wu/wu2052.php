@@ -36,7 +36,7 @@
 		<td>S06</td>
 		<td>長沼</td>
 		<td>Naganuma</td>
-		<td>21:07</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>S07</td>

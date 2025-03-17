@@ -48,49 +48,49 @@
 		<td>S08</td>
 		<td>県総合運動場</td>
 		<td>Pref. Sports Park</td>
-		<td>6:53</td>
+		<td>6:57</td>
 	</tr>
 	<tr>
 		<td>S09</td>
 		<td>県立美術館前</td>
 		<td>Pref. Art Museum</td>
-		<td>6:55</td>
+		<td>6:59</td>
 	</tr>
 	<tr>
 		<td>S10</td>
 		<td>草薙</td>
 		<td>Kusanagi</td>
-		<td>6:57</td>
+		<td>7:01</td>
 	</tr>
 	<tr>
 		<td>S11</td>
 		<td>御門台</td>
 		<td>Mikadodai</td>
-		<td>6:59</td>
+		<td>7:03</td>
 	</tr>
 	<tr>
 		<td>S12</td>
 		<td>狐ケ崎</td>
 		<td>Kitsunegasaki</td>
-		<td>7:00</td>
+		<td>7:04</td>
 	</tr>
 	<tr>
 		<td>S13</td>
 		<td>桜橋</td>
 		<td>Sakurabashi</td>
-		<td>7:03</td>
+		<td>7:07</td>
 	</tr>
 	<tr>
 		<td>S14</td>
 		<td>入江岡</td>
 		<td>Irieoka</td>
-		<td>7:04</td>
+		<td>7:08</td>
 	</tr>
 	<tr>
 		<td>S15</td>
 		<td>新清水</td>
 		<td>Shin-Shimizu</td>
-		<td>7:06</td>
+		<td>7:10</td>
 	</tr>
 </table>
 </div>

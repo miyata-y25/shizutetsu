@@ -4,9 +4,9 @@
 <table>
 	<tr>
 		<th>S01</th>
-		<th>新静岡</th>
-		<th>Shin-Shizuoka</th>
-		<th>6:11</th>
+		<td>新静岡</td>
+		<td>Shin-Shizuoka</td>
+		<td>6:11</td>
 	</tr>
 	<tr>
 		<th>S02</th>

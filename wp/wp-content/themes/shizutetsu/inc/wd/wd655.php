@@ -36,61 +36,61 @@
 		<td>S06</td>
 		<td>長沼</td>
 		<td>Naganuma</td>
-		<td>6:28</td>
+		<td>6:27</td>
 	</tr>
 	<tr>
 		<td>S07</td>
 		<td>古庄</td>
 		<td>Furusho</td>
-		<td>6:29</td>
+		<td>6:28</td>
 	</tr>
 	<tr>
 		<td>S08</td>
 		<td>県総合運動場</td>
 		<td>Pref. Sports Park</td>
-		<td>6:31</td>
+		<td>6:30</td>
 	</tr>
 	<tr>
 		<td>S09</td>
 		<td>県立美術館前</td>
 		<td>Pref. Art Museum</td>
-		<td>6:33</td>
+		<td>6:32</td>
 	</tr>
 	<tr>
 		<td>S10</td>
 		<td>草薙</td>
 		<td>Kusanagi</td>
-		<td>6:35</td>
+		<td>6:34</td>
 	</tr>
 	<tr>
 		<td>S11</td>
 		<td>御門台</td>
 		<td>Mikadodai</td>
-		<td>6:37</td>
+		<td>6:36</td>
 	</tr>
 	<tr>
 		<td>S12</td>
 		<td>狐ケ崎</td>
 		<td>Kitsunegasaki</td>
-		<td>6:38</td>
+		<td>6:37</td>
 	</tr>
 	<tr>
 		<td>S13</td>
 		<td>桜橋</td>
 		<td>Sakurabashi</td>
-		<td>6:41</td>
+		<td>6:40</td>
 	</tr>
 	<tr>
 		<td>S14</td>
 		<td>入江岡</td>
 		<td>Irieoka</td>
-		<td>6:42</td>
+		<td>6:41</td>
 	</tr>
 	<tr>
 		<td>S15</td>
 		<td>新清水</td>
 		<td>Shin-Shimizu</td>
-		<td>6:44</td>
+		<td>6:43</td>
 	</tr>
 </table>
 </div>

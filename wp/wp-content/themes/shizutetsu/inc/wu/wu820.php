@@ -6,91 +6,91 @@
 		<td>S01</td>
 		<td>新静岡</td>
 		<td>Shin-Shizuoka</td>
-		<td>9:18</td>
+		<td>9:23</td>
 	</tr>
 	<tr>
 		<td>S02</td>
 		<td>日吉町</td>
 		<td>Hiyoshicho</td>
-		<td>9:16</td>
+		<td>9:21</td>
 	</tr>
 	<tr>
 		<td>S03</td>
 		<td>音羽町</td>
 		<td>Otowacho</td>
-		<td>9:15</td>
+		<td>9:20</td>
 	</tr>
 	<tr>
 		<td>S04</td>
 		<td>春日町</td>
 		<td>Kasugacho</td>
-		<td>9:13</td>
+		<td>9:18</td>
 	</tr>
 	<tr>
 		<td>S05</td>
 		<td>柚木</td>
 		<td>Yunoki</td>
-		<td>9:12</td>
+		<td>9:17</td>
 	</tr>
 	<tr>
 		<td>S06</td>
 		<td>長沼</td>
 		<td>Naganuma</td>
-		<td>9:10</td>
+		<td>9:15</td>
 	</tr>
 	<tr>
 		<td>S07</td>
 		<td>古庄</td>
 		<td>Furusho</td>
-		<td>9:08</td>
+		<td>9:13</td>
 	</tr>
 	<tr>
 		<td>S08</td>
 		<td>県総合運動場</td>
 		<td>Pref. Sports Park</td>
-		<td>9:06</td>
+		<td>9:11</td>
 	</tr>
 	<tr>
 		<td>S09</td>
 		<td>県立美術館前</td>
 		<td>Pref. Art Museum</td>
-		<td>9:04</td>
+		<td>9:06</td>
 	</tr>
 	<tr>
 		<td>S10</td>
 		<td>草薙</td>
 		<td>Kusanagi</td>
-		<td>9:03</td>
+		<td>9:05</td>
 	</tr>
 	<tr>
 		<td>S11</td>
 		<td>御門台</td>
 		<td>Mikadodai</td>
-		<td>9:01</td>
+		<td>9:03</td>
 	</tr>
 	<tr>
 		<td>S12</td>
 		<td>狐ケ崎</td>
 		<td>Kitsunegasaki</td>
-		<td>8:59</td>
+		<td>9:01</td>
 	</tr>
 	<tr>
 		<td>S13</td>
 		<td>桜橋</td>
 		<td>Sakurabashi</td>
-		<td>8:57</td>
+		<td>8:59</td>
 	</tr>
 	<tr>
 		<td>S14</td>
 		<td>入江岡</td>
 		<td>Irieoka</td>
-		<td>8:55</td>
+		<td>8:57</td>
 	</tr>
 	<tr>
 		<td>S15</td>
 		<td>新清水</td>
 		<td>Shin-Shimizu</td>
-		<td>8:54</td>
+		<td>8:56</td>
 	</tr>
 </table>
 </div>
