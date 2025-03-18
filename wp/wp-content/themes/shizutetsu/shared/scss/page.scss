@@ -1387,6 +1387,18 @@
               &.for {
                 background-color: #EECAD1;
               }
+
+              &.ex {
+                a {
+                  color: #e90000;
+                }
+              }
+
+              &.comex {
+                a {
+                  color: #e99400;
+                }
+              }
             }
 
             &:nth-child(odd) {

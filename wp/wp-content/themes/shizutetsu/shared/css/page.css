@@ -1235,6 +1235,12 @@
 .main-contents .page-contents-timetable .page-contents-timetable-body .page-contents-timetable-table table tr td.for {
   background-color: #EECAD1;
 }
+.main-contents .page-contents-timetable .page-contents-timetable-body .page-contents-timetable-table table tr td.ex a {
+  color: #e90000;
+}
+.main-contents .page-contents-timetable .page-contents-timetable-body .page-contents-timetable-table table tr td.comex a {
+  color: #e99400;
+}
 .main-contents .page-contents-timetable .page-contents-timetable-body .page-contents-timetable-table table tr:nth-child(odd) {
   background-color: #E3F2F7;
 }

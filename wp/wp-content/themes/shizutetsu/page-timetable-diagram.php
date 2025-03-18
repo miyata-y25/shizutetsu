@@ -151,6 +151,13 @@ get_header();
 					include('inc/wu/wu2302.php'); 
 					include('inc/wu/wu2304.php'); 
 					include('inc/wu/wu2306.php');
+					include('inc/wu/wu3602e.php');
+					include('inc/wu/wu3604e.php');
+					include('inc/wu/wu3702e.php');
+					include('inc/wu/wu3704e.php');
+					include('inc/wu/wu3706e.php');
+					include('inc/wu/wu3902e.php');
+					include('inc/wu/wu3904e.php');
 				} elseif ( strstr($url,'up-satholidays')==true ) { //休日上り
 					include('inc/hu/hu682.php'); 
 					include('inc/hu/hu602.php'); 
