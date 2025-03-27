@@ -30,7 +30,7 @@
 		<td>S05</td>
 		<td>柚木</td>
 		<td>Yunoki</td>
-		<td></td>
+		<td>9:31</td>
 	</tr>
 	<tr>
 		<td>S06</td>
