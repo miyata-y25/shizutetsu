@@ -1191,7 +1191,8 @@
 
       .sample {
         @include flex-fs;
-        margin: 0 0 1.5em;
+        margin: 0 1.5em 1.5em 0;
+        float: left;
 
         .color {
           width: 2em;
@@ -1215,6 +1216,7 @@
         display: none;
         width: 100%;
         font-size: 1.4rem;
+        clear: both;
 
         @include max-screen($screen-sm) {
           display: block;
@@ -1356,6 +1358,7 @@
 
       .page-contents-timetable-table {
         margin: 0 0 4em;
+        clear: both;
 
         @include max-screen($screen-sm) {
           //display: flex;

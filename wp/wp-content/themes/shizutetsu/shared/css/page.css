@@ -1062,7 +1062,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 0 0 1.5em;
+  margin: 0 1.5em 1.5em 0;
+  float: left;
 }
 .main-contents .page-contents-timetable .page-contents-timetable-body .sample .color {
   width: 2em;
@@ -1082,6 +1083,7 @@
   display: none;
   width: 100%;
   font-size: 1.4rem;
+  clear: both;
 }
 @media screen and (max-width: 820px) {
   .main-contents .page-contents-timetable .page-contents-timetable-body p.txt {
@@ -1206,6 +1208,7 @@
 }
 .main-contents .page-contents-timetable .page-contents-timetable-body .page-contents-timetable-table {
   margin: 0 0 4em;
+  clear: both;
 }
 @media screen and (max-width: 820px) {
   .main-contents .page-contents-timetable .page-contents-timetable-body .page-contents-timetable-table {
